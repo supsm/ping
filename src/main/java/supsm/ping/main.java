@@ -28,7 +28,7 @@ public class main implements ModInitializer
 				{
 					return 0;
 				}
-				source.sendMessage(Text.literal(player.pingMilliseconds + " ms"));
+				source.sendMessage(Text.literal(player.networkHandler.getLatency() + " ms"));
 				return 1;
 			}));
 		});
